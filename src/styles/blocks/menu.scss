@@ -1,0 +1,74 @@
+.menu {
+  background-color: $colorBlue;
+
+  &__content {
+    box-sizing: border-box;
+    height: 100vh;
+
+    padding: 24px 20px 80px;
+
+    @include onDesktop {
+      padding: 24px 40px 80px;
+    }
+  }
+
+  &__top {
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    margin: 0;
+    margin-bottom: 48px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #fff;
+
+    transition: border-color 0.3s linear;
+
+    &:hover {
+      border-color: #fff;
+    }
+  }
+
+  &__call {
+    display: block;
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+
+    &--number {
+      margin-bottom: 16px;
+    }
+
+    &--action {
+      padding-bottom: 8px;
+      border-bottom: 1px solid #fff;
+      width: max-content;
+    }
+  }
+}
